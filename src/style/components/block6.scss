@@ -1,0 +1,120 @@
+.block6{
+    background: linear-gradient(157.43deg, #52E5E7 -0.5%, #130CB7 100%);
+    box-shadow: 0 rem(26) rem(60) rgba(0, 0, 0, 0.236272), 0 rem(7) rem(8) rgba(0, 0, 0, 0.189934);
+    position: relative;
+    overflow: hidden;
+    padding: rem(43) rem(437) rem(63) rem(75);
+    grid-area: block6;
+
+    &__img{
+        position: absolute;
+        right: rem(-54);
+        bottom: rem(-10);
+        img{
+            width: rem(572);
+            height: rem(359);
+        }
+    }
+
+    &__title{
+        span{
+            font-weight: 900;
+            line-height: rem(101);
+            font-size: rem(72);
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+
+    &__desc{
+        margin-bottom: rem(33);
+        p{
+            font-weight: 500;
+            line-height: rem(43);
+            font-size: rem(30);
+            color: $white; 
+        }
+    }
+
+    &__button{
+        .button{
+            background: $white;
+            border: rem(2) solid $black;
+            box-shadow: inset 0 rem(1) 0 $white;
+            border-radius: rem(5);
+            width: rem(390);
+            height: rem(70);
+            font-weight: 600;
+            line-height: normal;
+            font-size: rem(20);
+            letter-spacing: rem(1);
+            text-transform: uppercase;
+            color: $black;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (max-width:1025px){
+    .block6{
+
+        &__title{
+            span{
+                line-height: rem(80);
+                font-size: rem(57);
+            }
+        }
+
+        &__desc{
+            padding-right: rem(95);
+            margin-bottom: rem(110);
+            p{
+                line-height: rem(35);
+                font-size: rem(25);
+            }
+        }
+
+        &__button{
+            .button{
+                width: rem(286);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .block6{
+        padding: 20px;
+
+        &__img{
+            display: none;
+        }
+
+        &__title{
+            margin-bottom: 16px;
+            span{
+                font-size: 28px;
+                line-height: 28px;
+            }
+        }
+
+        &__desc{
+            padding-right: 0;
+            margin-bottom: 40px;
+            p{
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+
+        &__button{
+            .button{
+                width: 100%;
+                font-size: 15px;
+                line-height: 15px;
+            }
+        }
+    }
+}

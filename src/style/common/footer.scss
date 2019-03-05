@@ -1,0 +1,148 @@
+.footer{
+    padding: rem(40) 0 rem(89) 0;
+
+    &__content{
+        display: flex;
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact{
+        margin-right: rem(68);
+        span{
+            line-height: rem(36);
+            font-size: rem(26);
+            letter-spacing: rem(7.22222);
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
+
+    &__line{
+        width: rem(210);
+        height: rem(2);
+        background-color: $black;
+    }
+
+    &__right{
+        display: flex;
+        flex: 1;
+        padding-left: rem(191.5);
+        justify-content: space-between;
+    }
+
+    &__blockitem{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &:hover{
+            span{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__icn{
+        text-align: center;
+        margin-bottom: rem(39);
+        &_phone{
+            svg{
+                width: rem(33);
+                height: rem(48);
+            }
+        }
+
+        &_mail{
+            svg{
+                width: rem(48);
+                height: rem(38.4);
+            }
+        }
+
+        &_skype{
+            svg{
+                width: rem(48);
+                height: rem(48);
+            }
+        }
+    }
+
+    &__text{
+        span{
+            font-weight: 700;
+            line-height: rem(19);
+            font-size: rem(13);
+            letter-spacing: rem(3.82353);
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
+}
+
+
+@media screen and (max-width:1025px){
+    .footer{
+
+        padding: rem(50) 0 rem(82) 0;
+
+        &__content{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__left{
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: rem(87);
+        }
+
+        &__contact{
+            margin-right: 0;
+            margin-bottom: rem(30);
+        }
+
+        &__right{
+            padding: 0;
+            padding: 0 rem(47);
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .footer{
+        
+        padding: 30px 0 20px 0;
+
+        &__left{
+            margin-bottom: 30px;
+        }
+
+        &__contact{
+            span{
+                font-size: 20px;
+            }
+        }
+
+        &__line{
+            width: 100px;
+        }
+
+        &__right{
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__blockitem{
+            margin-bottom: 28px;
+        }
+
+        &__icn{
+            margin-bottom: 10px;
+        }
+    }
+}

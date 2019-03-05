@@ -1,0 +1,106 @@
+extends ../template
+
+block varibles
+    - var title = "Company"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        
+        section.secttop
+            .wrapper
+                .secttop__content
+                    .secttop__left
+                        .secttop__title
+                            h1 LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING
+                        .secttop__desc
+                            p Nam est dolor, sollicitudin vitae fermentum vel, gravida non dolor. Curabitur ante mi, porta sit amet nibh nec, ullamcorper efficitur ipsum.
+                    .secttop__right
+                        img(src="./images/dash.png", alt="")
+                        img(src="./images/dash_1024.png", alt="")
+                        
+
+        section.contentpage
+            .wrapper
+                .contentpage__content
+
+                    .block1.blocknumber
+                        .blocknumber__top
+                            .blocknumber__number
+                                span 1
+                            .blocknumber__title 
+                                span.title Lorem ipsum dolor
+                        .blocknumber__bottom
+                            .blocknumber__desc
+                                p We always send our clients necessary information on daily basis. You can use control panel to plan.  
+                    
+                    .block2.blocknumber.blocknumber_padbott 
+                        .blocknumber__top
+                            .blocknumber__number
+                                span 2
+                            .blocknumber__title 
+                                span.title Lorem ipsum dolor
+                        .blocknumber__bottom
+                            .blocknumber__desc
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam est dolor, sollicitudin vitae fermentum vel, gravida non dolor. Curabitur ante mi, porta sit amet nibh nec, ullamcorper efficitur ipsum. Etiam a tincidunt lectus, vitae dapibus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque sit amet vulputate felis. Nunc sodales accumsan ipsum a sollicitudin.
+                    
+                    .block3.blocknumber.blocknumber_padleft
+                        .blocknumber__top
+                            .blocknumber__number
+                                span 3
+                            .blocknumber__title 
+                                span.title Rating list
+                        .blocknumber__bottom
+                            .blocknumber__desc
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                        .blocknumber__item(style="background-image: url(./images/rectangle1.png);")
+                            span Item1
+                            div(style="background: #4ED7E4;") 
+                            div(style="background: #FF7386;")
+                        .blocknumber__item(style="background-image: url(./images/rectangle2.png);")
+                            span Item2
+                            div(style="background: #219DC5;") 
+                            div(style="background: #C85060;")
+                        .blocknumber__item(style="background-image: url(./images/rectangle3.png);")
+                            span Item3
+                            div(style="background: #028A97;") 
+                            div(style="background: #B25561;")
+
+                    .block4 
+                        .block4__bgimg
+                            img(src="./images/Path.png", alt="")
+                        .block4__pers1
+                            img(src="./images/nemo.png", alt="")
+                        .block4__pers2
+                            img(src="./images/pers2.png", alt="")
+                        .block4__title
+                            span Lorem ipsum
+                        form.block4__form
+                            .block4__nameform
+                                span Form
+                            .block4__blockinputs
+                                input(type="text" placeholder="Placeholder")
+                                input(type="number" placeholder="Value")
+                            .block4__button
+                                button.button(type="submit") SUBMIT BUTTON
+                                    img(src="./images/i/img_btn.svg", alt="")
+                            
+                    .block5 
+                        span CLICK HERE!
+
+                    .block6 
+                        .block6__img
+                            img(src="./images/i/undraw_winners_2yls.svg", alt="")
+                        .block6__title
+                            span Lorem ipsum
+                        .block6__desc
+                            p Lorem ipsum dolor sit amet dipiscing elit, consectetur adipiscing elit.
+                        .block6__button
+                            button.button Learn more
+
+                    
+                        
+        include ../common/footer.pug

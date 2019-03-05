@@ -1,0 +1,15 @@
+.title{
+    font-weight: 600;
+    line-height: rem(33);
+    font-size: rem(24);
+    text-transform: uppercase;
+    color: $black;
+}
+
+
+@media screen and (max-width:769px){
+    .title{
+        line-height: 20px;
+        font-size: 18px;
+    }
+}

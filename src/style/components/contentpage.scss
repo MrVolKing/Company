@@ -1,0 +1,70 @@
+.contentpage{
+    padding: rem(94) 0 rem(40) 0;
+
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:    "block1  block2   block3"
+                                "block1 block2  block3"
+                                "block4 block2  block3"
+                                "block4  block5   block3"
+                                "block4 block6  block6"
+                                "block4 block6  block6"
+                                "block4  block6   block6"
+                                "block4 block6  block6";
+        grid-column-gap: rem(67);
+        grid-auto-rows: minmax(rem(100), auto);
+    }
+}
+
+
+@media screen and (max-width:1025px){
+    .contentpage{
+        padding: rem(40) 0 rem(50) 0;
+    
+        &__content{
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-columns: minmax(rem(100), auto);
+            grid-column-gap: rem(41);
+            grid-template-areas:    "block1  block2   "
+                                "block1 block2  "
+                                "block3 block2  "
+                                "block3  block4   "
+                                "block3 block4  "
+                                "block3 block4  "
+                                "block5  block4   "
+                                ". block4  "
+                                "block6 block6  "
+                                "block6 block6  "
+                                "block6  block6   "
+                                "block6 block6  ";
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .contentpage{
+        padding: rem(20);
+    
+        &__content{
+            grid-template-columns: 100%;
+            grid-auto-columns: minmax(rem(100), auto);
+            grid-template-areas:    
+                                    "block1 "
+                                    "block2 "
+                                    "block2 "
+                                    "block3 "
+                                    "block3 "
+                                    "block3 "
+                                    "block4 "
+                                    "block4 "
+                                    "block4 "
+                                    "block4 "
+                                    "block5 "
+                                    "block6 "
+                                    "block6 "
+                                    "block6 ";
+        }
+    }
+}

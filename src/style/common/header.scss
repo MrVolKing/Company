@@ -1,0 +1,139 @@
+.header{
+    height: rem(100);
+    box-shadow: 0 rem(4) rem(9) rem(1) rgba(17, 17, 17, 0.13);
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+
+    .wrapper{
+        height: 100%;
+    }
+    
+    &__content, &__left, &__menu{
+        display: flex;
+        height: 100%;
+    }
+
+    &__content{
+        justify-content: space-between;
+    }
+
+    &__left{
+        padding-left: rem(24);
+        align-items: center;
+    }
+
+    &__logo{
+        margin-right: rem(170.5);
+        width: rem(242);
+        height: rem(50);
+        img{
+            width: 100%;
+        }
+    }
+
+    &__menu{
+        height: 100%;
+    }
+
+    &__menu_item{
+        margin-right: rem(62);
+        font-weight: 700;
+        line-height: rem(19);
+        font-size: rem(13);
+        letter-spacing: rem(3.82353);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        a{
+            color: $black; 
+        }
+
+        &:hover:before{
+            content: "";
+            width: rem(5);
+            height: rem(22);
+            background: #9013FE;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone{
+        a{
+            font-weight: 700;
+            line-height: rem(19);
+            font-size: rem(13);
+            letter-spacing: rem(3.82353);
+            text-transform: uppercase;
+            color: $black;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__burger{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1025px){
+    .header{
+
+        &__left{
+            padding-left: 0;
+            width: 100%;
+        }
+
+        &__logo{
+            margin-right: rem(63.5);
+        }
+
+        &__menu{
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        &__menu_item{
+            margin-right: 0;
+        }
+
+        &__right{
+            display: none;
+        }        
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .header{
+
+        &__logo{
+            margin-right: 0;
+        }
+
+        &__menu{
+            display: none;
+        }
+
+        &__burger{
+            display: flex;
+            svg{
+                width: 40px;
+            }
+        }
+    }
+}
