@@ -34,6 +34,13 @@
 
     &__menu{
         height: 100%;
+        nav{
+            display: flex;
+        }
+    }
+
+    &__close{
+        display: none;
     }
 
     &__menu_item{
@@ -105,6 +112,10 @@
             display: flex;
             flex: 1;
             justify-content: space-between;
+            nav{
+                width: 100%;
+                justify-content: space-between;
+            }
         }
 
         &__menu_item{
@@ -125,9 +136,9 @@
             margin-right: 0;
         }
 
-        &__menu{
-            display: none;
-        }
+        // &__menu{
+        //     // display: none;
+        // }
 
         &__burger{
             display: flex;

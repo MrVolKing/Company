@@ -3,21 +3,24 @@ header.header
         .header__content
             .header__left
                 a(href="/").header__logo
-                    img(src="./images/logo.png", alt="") 
+                    img(src="./images/logo.png", alt="")
 
-                nav.header__menu
-                    .header__menu_item
-                        a(href="#") Home              
-                    .header__menu_item
-                        a(href="#") About   
-                    .header__menu_item
-                        a(href="#") Portfolio 
-                    .header__menu_item
-                        a(href="#") Services              
-                    .header__menu_item
-                        a(href="#") Contact   
-                    .header__menu_item
-                        a(href="#") Blog 
+                .header__menu.adaptmenu
+                    .header__close.close
+                        img(src="./images/close.png", alt="")
+                    nav
+                        .header__menu_item
+                            a(href="#") Home              
+                        .header__menu_item
+                            a(href="#") About   
+                        .header__menu_item
+                            a(href="#") Portfolio 
+                        .header__menu_item
+                            a(href="#") Services              
+                        .header__menu_item
+                            a(href="#") Contact   
+                        .header__menu_item
+                            a(href="#") Blog 
 
             .header__right
                 .header__phone
@@ -28,22 +31,4 @@ header.header
                     path(d='M1.1,3.5C0.5,3.5,0,3,0,2.4V1.7c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M1.1,13.8c-0.6,0-1.1-0.5-1.1-1.1V12c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M16.2,24c-0.6,0-1.1-0.5-1.1-1.1v-0.6c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.6 c0,0.6-0.5,1.1-1.1,1.1H16.2z')
             
 
-            .adaptmenu
-                    .adaptmen__close.close
-                        img(src="./images/close.png", alt="")
-
-                    .adaptmenu__content
-
-                        nav
-                            .adaptmenu__menu_item
-                                a(href="#") Home  
-                            .adaptmenu__menu_item
-                                a(href="#") About 
-                            .adaptmenu__menu_item
-                                a(href="#") Portfolio
-                            .adaptmenu__menu_item
-                                a(href="#") Services 
-                            .adaptmenu__menu_item
-                                a(href="#") Contact  
-                            .adaptmenu__menu_item
-                                a(href="#") Blog 
+            

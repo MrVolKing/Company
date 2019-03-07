@@ -12,7 +12,7 @@ $(document).ready(() => {
         $('body').css('overflow-x', 'hidden');
     });
 
-    $('.adaptmenu nav').click(function() {
+    $('.header__menu_item').click(function() {
         $('.adaptmenu').removeClass('adaptmenu_active');
         $('body').css('overflow', 'visible');
         $('body').css('overflow-x', 'hidden');
